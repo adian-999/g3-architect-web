@@ -1,0 +1,126 @@
+body{
+    
+
+
+  font-family: "Playwrite AU TAS", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+
+/* shared style */
+.display-flex{
+    display:flex;
+}
+.text-dark2{
+    color:#424242;
+}
+.text-dark3{
+    color:#727272;
+}
+.bg-light{
+    background-color:rgba(255, 144, 14, 0.1);
+    
+}
+.btn-primary{
+    background-color:#FF900E ;
+    color:white;
+    padding:21px 21px 25px 30px;
+    font-size:1.2rem;
+    font-weight:500;
+    border-radius:7px;
+    border:none;
+}
+main{
+    max-width:1440px;
+    margin:0 auto;
+}
+main>section{
+    margin-top:130px;
+}
+/* header style */
+
+/* navbar related style */
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right:30px;
+}
+.nav-links a{
+    text-decoration:none;
+}
+.navbar, .banner{
+    max-width:1440px;
+    margin:0 auto;
+}
+.brand{
+    font-weight: 700;
+    font-size:3rem;
+}
+/* banner related styles */
+.banner-contant{
+    max-width:850px;
+    margin:0 auto;
+    margin-bottom:50px;
+}
+.banner-title{
+    font-weight:700;
+
+    font-size:4rem;
+}
+.banner-img{
+    width:100%;
+}
+/* team related style */
+.team{
+    align-items: center;
+    gap:130px;
+}
+.team-img-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+}
+.our-features{
+    max-width:540px;
+}
+.feature-title{
+    font-size:3rem;
+
+}
+.quick-list{
+    color:#727272;
+}
+.of{
+    color:black;
+}
+.features{
+    color:#FF900E;
+}
+
+
+/* responsive media  */
+@media screen and (max-width:576px){
+    .navbar, 
+    .nav-links,
+    .team{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* medium size device */
+@media screen and (min-width:576px) and (max-width:990px){
+    .team{
+        flex-direction: column;
+    }
+    
+}
